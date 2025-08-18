@@ -1,0 +1,103 @@
+/* 배너 네비게이션 CSS */
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.8 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ffce32 !important;
+  width: 25px !important;
+  height: 8px;
+  border-radius: 5px !important;
+  transition: all 0.5s;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 5% !important;
+  left: -30% !important;
+}
+
+
+/* 비주얼 배너 CSS */
+.visual {
+  position: relative;
+  width: 100%;
+  z-index: -99;
+}
+.visual a {
+  width: 100%;
+}
+.visual .swiper-slide > a > img {
+  display: block;
+  width: 100%;
+  /* max-width: 1920px; */
+  margin: auto;
+}
+.banner-swiper {
+  width: 100%;
+}
+
+
+/* 주문버튼 (수정필요) */
+.orderBtn {
+  position: absolute;
+  display: block;
+  /* bottom: -70px;
+  right: 375px; */
+  bottom: -8%;
+  /* left: 80%; */
+  right: 20%;
+  /* transform: translateX(-100%); */
+  /* width: 600px; */
+  width: 30%;
+  max-width: 600px;
+  display: flex;
+  z-index: 99;
+}
+.orderBtn li {
+  /* width: 300px;
+   */
+  display: flex;
+  width: calc(100% / 2);
+  padding: 4% 5%;
+  background-color: #009223;
+  border-radius: 0 0 30px 0;
+}
+.orderBtn li a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.orderBtn img {
+  width: 10%;
+  max-width: 24px;
+  min-width: 20px;
+}
+.orderBtn li:nth-child(1) {
+  background-color: #ffce32;
+  border-radius: 30px 0 0 0;
+}
+@media screen and (max-width:1100px) {
+   .orderBtn li a{
+    font-size: 0.8rem;
+   } 
+}
+@media screen and (max-width:960px) {
+   .orderBtn li a{
+    font-size: 0.7rem;
+   } 
+}
+
+/* 태블릿 메뉴 미디어 설정 */
+@media screen and (max-width:890px) {
+  .orderBtn{
+    flex-direction: column;
+  }
+}
