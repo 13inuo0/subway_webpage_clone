@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  height: 175px;
+  background-color: #222;
+}
+.footer-inner {
+  padding: 3% 17%;
+}
+.footer-top {
+  margin-bottom: 20px;
+}
+.footer-top a {
+  font-size: clamp(11px, 1vw, 13px);
+  color: #666666;
+}
+.footer-top ul {
+  display: flex;
+}
+.footer-bottom a {
+  font-size: clamp(11px, 1vw, 13px);
+  color: #666666;
+}
