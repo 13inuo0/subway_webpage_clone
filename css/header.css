@@ -55,7 +55,8 @@
 .menubar > li > a {
   color: #292929;
   font-weight: bold;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
+  font-size: clamp(11px, 1.5vw, 18px);
 }
 
 
@@ -72,7 +73,9 @@
 }
 .submenu > li > a {
   color: #666666;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  font-size: clamp(10px, 1vw, 14px);
+  font-weight: bold;
 }
 .submenu.active {
   /* display: block; */
@@ -84,7 +87,8 @@
   height: 70px;
 }
 
-@media screen and (max-width:1200px){
+/* 반응형 폰트 사이즈 */
+/* @media screen and (max-width:1200px){
   .menubar > li > a {
     font-size: 0.9rem;
   }
@@ -93,4 +97,4 @@
   .menubar > li > a {
     font-size: 0.7rem;
   }
-}
+} */
