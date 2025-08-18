@@ -99,7 +99,7 @@
 }
 
 /* 태블릿 메뉴 미디어 설정 */
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 920px) {
   .orderBtn {
     flex-direction: column;
   }
