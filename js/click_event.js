@@ -33,4 +33,26 @@ const visualSwiper = new Swiper(".banner-swiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+    // 샌드위치 메뉴 스와이퍼
+  const itemSwiper = new Swiper(".food-menu", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+      590: {
+        slidesPerView: 2.5,
+      },
+      768: {
+        slidesPerView: 3.5,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
 });

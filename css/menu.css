@@ -1,0 +1,144 @@
+.subway-menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+}
+/* 샌드위치 메뉴 상단 */
+.menu_top {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.menu_top h1 {
+  width: 100%;
+  position: relative;
+  /* font-size: 40px; */
+  font-size: clamp(24px, 2.5vw, 40px);
+  font-weight: bold;
+}
+
+/* 서브웨이 메뉴 배경아이콘 */
+.menu_top h1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../image/imgi_31_bul_tit.png") no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  z-index: -10;
+}
+
+/* 샌드위치 메뉴 분류 */
+.sandtap-menus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 7%;
+  width: 100%;
+}
+.sandtap-menus > li > a {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 0 15px;
+  font-size: clamp(11px, 1vw, 16px);
+  font-weight: bold;
+  color: #555555;
+}
+.sandtap-menus > li:nth-child(1) > a {
+  color: #009223;
+}
+
+/* 샌드위치 메뉴 분류 구분선 */
+.sandtap-menus > li > a::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #dddddd;
+  position: absolute;
+  bottom: 3px;
+  right: -15px;
+}
+.sandtap-menus > li:last-child > a::after {
+  display: none;
+}
+
+/* 샌드위치 슬라이드 메뉴 */
+.menu-bottom {
+  width: 100%;
+}
+
+/* 슬라이드 네비게이션 */
+.classic {
+  width: 100%;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  font-weight: bold;
+  text-align: center;
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aquamarine; */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #999999 !important;
+  top: var(--swiper-navigation-top-offset, 65%) !important;
+  width: calc(var(--swiper-navigation-size) / 44 * 400) !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ffce32;
+}
+
+/* 슬라이드 샌드위치 소개 */
+.food-menu {
+  margin: auto;
+  width: 60% !important;
+}
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+.swiper-slide {
+  width: calc(100% / 4);
+}
+.swiper-slide img {
+    display: block;
+    position: relative;
+  width: 100%;
+}
+.swiper-slide h2 {
+  font-size: clamp(11px, 1.5vw, 18px);
+  color: #292929;
+}
+.swiper-slide p {
+  font-size: clamp(11px, 1vw, 13px);
+  color: #999999;
+}
+
+/* 샌드위치 호버 */
+.swiper-slide a:hover img,
+.swiper-slide a:hover h2 {
+  transform: scale(1.2);
+}
+.swiper-slide a:hover p{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* 호버 아이콘 */
+.sand-img{
+    background-color: #009223;
+}
