@@ -57,13 +57,11 @@ window.addEventListener("load", function () {
   });
 
   // 호버 줌아이콘 실행
-  const sandwich = this.document.querySelectorAll(".swiper a");
+  const sandwich = this.document.querySelectorAll(".swiper-slide");
   const zoomIcon = this.document.querySelector(".zoom-icon");
-  sandwich.addEventListener("mouseenter", function () {
-    sandwich.forEach(function (sand) {
-      sand.classList.add("hover");
-    });
-    zoo
+
+  sandwich.forEach(function (sand) {
+sand.addEventListener("mouseenter", function(){
+})
   });
-  zoomIcon;
 });

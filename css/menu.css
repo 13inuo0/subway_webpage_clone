@@ -121,6 +121,7 @@ left: 10% !important;
   margin: auto;
 }
 .swiper-slide {
+  position: relative;
   width: calc(100% / 4);
 }
 .swiper-slide img {
@@ -153,8 +154,14 @@ left: 10% !important;
 }
 .zoom-icon {
   display: none;
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  max-width: 50px;
+  min-width: 30px;
+  /* height: 20%; */
+  aspect-ratio: 1/1;
+  /* 너비높이 비율을 맞추는 코드 */
+  max-height: 50px;
+  min-height: 30px;
   background-color: #ffce32;
   border-radius: 50%;
   position: absolute;
@@ -163,12 +170,15 @@ left: 10% !important;
   /* bottom: 0;
   left: 0; */
   transform: translate(-50%, -50%);
-  padding-top: 3%;
-  font-size: 2rem;
+  padding-top: 5%;
+  font-size: clamp(12px, 1vw, 18px);
   text-align: center;
   color: #fff;
   z-index: 9999;
+  transition: all 0.5s;
 }
-.zoom-icon.hover{
+.swiper-slide:hover .zoom-icon{
   display: block;
+  top: 55%;
+    transform: translate(-50%, -50%) scale(1.2);
 }
