@@ -84,22 +84,31 @@
   font-size: 20px !important;
   font-weight: bold;
   text-align: center;
-  /* width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: aquamarine; */
+
 }
 .swiper-button-next,
 .swiper-button-prev {
   color: #999999 !important;
   top: var(--swiper-navigation-top-offset, 65%) !important;
-  width: calc(var(--swiper-navigation-size) / 44 * 400) !important;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #ffce32;
-}
+  /* width: calc(var(--swiper-navigation-size) / 44 * 400) !important; */
+  width: 4% !important;
+  /* background-color: red; */
 
+}
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: #292929;
+  background: #ffce32;
+  width: 50px;
+  line-height: 50px !important;
+  border-radius: 50%;
+}
+.swiper-button-next{
+right: 10% !important;
+}
+.swiper-button-prev{
+left: 10% !important;
+}
 /* 슬라이드 샌드위치 소개 */
 .food-menu {
   margin: auto;
@@ -115,8 +124,8 @@
   width: calc(100% / 4);
 }
 .swiper-slide img {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
   width: 100%;
 }
 .swiper-slide h2 {
@@ -133,12 +142,33 @@
 .swiper-slide a:hover h2 {
   transform: scale(1.2);
 }
-.swiper-slide a:hover p{
-    opacity: 0;
-    visibility: hidden;
+.swiper-slide a:hover p {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* 호버 아이콘 */
-.sand-img{
-    /* background-color: #009223; */
+.food-menu{
+  position: relative;
+}
+.zoom-icon {
+  display: none;
+  width: 25%;
+  height: 25%;
+  background-color: #ffce32;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bottom: 0;
+  left: 0; */
+  transform: translate(-50%, -50%);
+  padding-top: 3%;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  z-index: 9999;
+}
+.zoom-icon.hover{
+  display: block;
 }
