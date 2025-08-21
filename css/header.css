@@ -47,35 +47,56 @@
   justify-content: space-between;
   margin: auto;
   width: 55%;
-  height: 70px;
+  height: 50px;
+}
+.menubar > li{
+  width: calc(100% / 5);
 }
 .menubar > li > a:hover {
   color: #009223;
 }
 .menubar > li > a {
+  display: block;
+  width: 100%;
+  position: relative;
   color: #292929;
   font-weight: bold;
   /* font-size: 1.1rem; */
   font-size: clamp(11px, 1.5vw, 18px);
+  /* background-color: red; */
+  line-height: 50px;
 }
 
 
 /* 서브메뉴 */
 .submenu {
-  margin-top: 45px;
-  display: flex;
-  flex-direction: column;
+ 
+  position: relative;
+  top: 0px;
+  left: 0;
+  
   gap: 16px;
+  padding-top: 45px;
   opacity: 0;
   visibility: hidden;
-
-  /* background-color: blueviolet; */
 }
+
 .submenu > li > a {
+  display: block;
+  line-height: 20px;
   color: #666666;
+ line-height: 30px;
   /* font-size: 0.9rem; */
   font-size: clamp(10px, 1vw, 14px);
   font-weight: bold;
+}
+.submenu > li:first-child > a{
+ 
+}
+.submenu > li > a:hover{
+  color: #009223;
+ 
+  text-decoration: underline #009223;
 }
 .submenu.active {
   /* display: block; */
@@ -84,7 +105,7 @@
   visibility: visible;
 }
 .gnb{
-  height: 70px;
+  height: 50px;
 }
 
 /* 반응형 폰트 사이즈 */
