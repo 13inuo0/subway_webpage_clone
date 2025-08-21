@@ -149,8 +149,9 @@ left: 10% !important;
 }
 
 /* 호버 아이콘 */
-.food-menu{
+.sand-img{
   position: relative;
+  /* background-color: #ffce32; */
 }
 .zoom-icon {
   display: none;
@@ -179,8 +180,7 @@ left: 10% !important;
 }
 .swiper-slide:hover .zoom-icon{
   display: block;
-  top: 55%;
-    transform: translate(-50%, -50%) scale(1.2);
+  top: 57%;
 }
 
 
