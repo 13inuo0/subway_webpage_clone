@@ -35,59 +35,6 @@ window.addEventListener("load", function () {
   });
 
   // 메뉴선택
-  // const sandMenu = this.document.querySelectorAll(".sandtap-menus");
-  // const classic = this.document.querySelectorAll(".classic");
-  // sandMenu.forEach((sandmenus) => {
-  //   console.log(sandmenus);
-  // });
-
-  // function menuSelect(mS){
-  //   let mSlect = document.querySelector(mS)
-  //   if(mSlect.style.display === "none" || mSlect.style.display === ""){
-  //     mSlect.style.display = "block"
-  //   }
-  //   else if(mSlect.style.display === "block"){mSlect.style.display ="none"}
-  //   else{mSlect.style.display = "none"}
-  // }
-  // const sandMenu1 = this.document.querySelector(".classic")
-  // const sandMenu2 = this.document.querySelector(".fresh")
-  // const sandMenu3 = this.document.querySelector(".primium")
-  // const sandMenu4 = this.document.querySelector(".morning-menu")
-
-  // sandMenu1.addEventListener("click",function(){
-  //   menuSelect(".classic-menus")
-  // })
-  // sandMenu2.addEventListener("click",function(){
-  //   menuSelect(".fresh-menus")
-  // })
-  // sandMenu3.addEventListener("click",function(){
-  //   menuSelect(".primium-menus")
-  // })
-  // sandMenu4.addEventListener("click",function(){
-  //   menuSelect(".morning-menu-menus")
-  // })
-
-  // const menuSelect = this.document.querySelectorAll(".menu-flavor");
-  // const sandwiches = this.document.querySelectorAll(".sand-menus");
-  // menuSelect.forEach((flavor) => {
-  //   // console.log(flavor); 확인완료
-  //   flavor.addEventListener("click", function () {
-  //     const select = sandwiches[index];
-
-  //     if (select.classList.contains("open")) {
-  //       select.classList.remove("open");
-  //     } else {
-  //       // 열려있는 메뉴는 닫기
-  //       sandwiches.forEach(function (flavorSelect,index) {
-  //         //   console.log(sub);
-  //         flavorSelect.classList.remove("open");
-  //       });
-  //       // active가 없으면 열기
-  //       select.classList.add("open");
-  //     }
-  //   });
-  // });
-
   const menuSelect = this.document.querySelectorAll(".menu-flavor");
   const sandwiches = this.document.querySelectorAll(".sand-menus");
 
@@ -134,5 +81,14 @@ window.addEventListener("load", function () {
 
   sandwich.forEach(function (sand) {
     sand.addEventListener("mouseenter", function () {});
+  });
+
+  // 뉴스 notice 스와이퍼
+  const noticeSwiper = new Swiper(".subNotice", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 });

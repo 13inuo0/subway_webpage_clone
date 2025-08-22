@@ -22,7 +22,7 @@
 .visual {
   position: relative;
   width: 100%;
-  z-index: -99;
+  /* z-index: -99; */
 }
 .visual a {
   width: 100%;
@@ -45,7 +45,7 @@
   right: 375px; */
   bottom: -8%;
   /* left: 80%; */
-  right: 19%;
+  right: 20%;
   /* transform: translateX(-100%); */
   /* width: 600px; */
   width: 30%;

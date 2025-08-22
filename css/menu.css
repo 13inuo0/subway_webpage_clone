@@ -139,11 +139,11 @@ left: 10% !important;
 }
 
 /* 샌드위치 호버 */
-.swiper-slide a:hover img,
+.food-menu .swiper-slide a:hover img,
 .swiper-slide a:hover h2 {
   transform: scale(1.2);
 }
-.swiper-slide a:hover p {
+.food-menu .swiper-slide a:hover p {
   opacity: 0;
   visibility: hidden;
 }
