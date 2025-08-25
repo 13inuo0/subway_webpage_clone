@@ -53,6 +53,7 @@
   color: #fff;
   background-color: #01a5e2;
   width: 50%;
+  cursor: pointer;
 }
 /* 상단 오른쪽 */
 .sub-notice {
@@ -94,6 +95,7 @@
   color: #fff;
   background-color: #ff8300;
   width: 50%;
+  cursor: pointer;
 }
 
 /* 하단 내용 */
@@ -108,7 +110,7 @@
 .howTo {
   display: flex;
   /* min-height: clamp(180px, 28vw, 420px); */
-  width: calc((100% / 4) * 3);
+  width: 70%;
   border-radius: 2vw 0 2vw 0;
   background-color: #fff;
   /* gap: 5%; */
@@ -134,14 +136,14 @@
 .howTo-left p {
   color: #999999;
   font-size: clamp(11px, 1vw, 16px);
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 15% 0;
   line-height: 170%;
 }
 .howTo-right p {
   color: #333;
   font-size: clamp(11px, 1vw, 16px);
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 4% 0;
 }
 .howTo-btn {
@@ -151,9 +153,14 @@
   padding-top: 8%;
 }
 .subNotice {
-  width: calc(100% / 4);
+  width: 30%;
   border-radius: 0 10% 0 10%;
-  background-color: blue;
+  /* background-color: blue; */
+}
+.subNotice .swiper-wrapper .swiper-slide a{
+  width: 100%;
+  display: block;
+  /* background-color: #01a5e2; */
 }
 .subNotice .swiper-wrapper .swiper-slide a img {
   display: block;

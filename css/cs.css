@@ -1,0 +1,56 @@
+.cs-inner {
+  width: 60%;
+  padding: 2% 0;
+  margin: auto;
+}
+.cs-inner ul {
+  display: flex;
+  justify-content: space-between;
+}
+.quick-menu {
+  width: calc(100% / 4);
+}
+.quick-menu a {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+.quick-menu a img {
+  /* width: 25%; */
+  width: 4vw;
+}
+
+.quick-txt {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+}
+.quick-txt p {
+  display: inline-block;
+  font-size: clamp(11px, 1.5vw, 18px);
+  font-weight: bold;
+}
+.quick-txt span {
+  display: inline-block;
+  font-size: clamp(10px, 1.5vw, 12px);
+  color: #999999;
+}
+
+@media screen and (max-width: 1200px) {
+  .quick-menu a {
+    flex-direction: column;
+  }
+  .quick-menu a img {
+  /* width: 25%; */
+  width: 6vw;
+}
+  .quick-txt {
+    align-items: center;
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .quick-txt span {
+    display: none;
+  }
+}

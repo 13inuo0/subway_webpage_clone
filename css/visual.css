@@ -111,3 +111,16 @@
     flex-direction: column;
   }
 } */
+
+@media screen and (max-width: 1200px){
+  .orderBtn{
+    right: 25%;
+    /* transform: translateX(-50%); */
+  }
+  .orderBtn {
+    width: 50%;
+  }
+  .orderBtn li a {
+
+  }
+}

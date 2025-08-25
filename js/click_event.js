@@ -59,6 +59,8 @@ window.addEventListener("load", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    // n개씩 넘어가는 슬라이드 설정
+    slidesPerGroup: 2,
     // loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
