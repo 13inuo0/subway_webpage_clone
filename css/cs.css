@@ -27,7 +27,7 @@
 }
 .quick-txt p {
   display: inline-block;
-  font-size: clamp(11px, 1.5vw, 18px);
+  font-size: clamp(11px, 1.5vw, 16px);
   font-weight: bold;
 }
 .quick-txt span {

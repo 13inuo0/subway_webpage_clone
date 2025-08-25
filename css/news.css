@@ -157,7 +157,7 @@
   border-radius: 0 10% 0 10%;
   /* background-color: blue; */
 }
-.subNotice .swiper-wrapper .swiper-slide a{
+.subNotice .swiper-wrapper .swiper-slide a {
   width: 100%;
   display: block;
   /* background-color: #01a5e2; */
@@ -166,4 +166,45 @@
   display: block;
   width: 100%;
   /* height: 100%; */
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 768px) {
+  .news{
+    height: 50%;
+  }
+  .news-top {
+    flex-direction: column;
+  }
+  .news-bottom {
+    position: relative;
+    flex-direction: column;
+    /* background-color: #01a5e2; */
+  }
+  .howTo {
+    width: 100%;
+    flex-direction: column;
+  }
+  .howTo-left {
+    text-align: center;
+    padding-top: 5%;
+  }
+  .howTo-left img {
+    position: absolute;
+    top: 8%;
+    left: -15%;
+    width: 32%;
+  }
+  .howTo-right {
+    text-align: center;
+    padding-bottom: 80%;
+  }
+  .subNotice {
+    position: absolute;
+    top: -40vw;
+    left: 0;
+  }
+  .subNotice {
+    width: 50%;
+  }
 }

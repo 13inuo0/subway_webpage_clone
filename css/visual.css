@@ -112,15 +112,13 @@
   }
 } */
 
-@media screen and (max-width: 1200px){
-  .orderBtn{
+@media screen and (max-width: 1200px) {
+  .orderBtn {
     right: 25%;
     /* transform: translateX(-50%); */
-  }
-  .orderBtn {
     width: 50%;
+    bottom: -24%;
   }
   .orderBtn li a {
-
   }
 }

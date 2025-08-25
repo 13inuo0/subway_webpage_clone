@@ -30,7 +30,7 @@
 .header-bg.open {
   opacity: 1;
   visibility: visible;
-  height: 270px;
+  height: 310px;
 }
 
 /* 로고 */
@@ -48,6 +48,7 @@
   margin: auto;
   width: 60%;
   height: 50px;
+  z-index: 9999;
   /* background-color: aquamarine; */
 }
 .menubar > li {
@@ -60,13 +61,17 @@
 .menubar > li > a {
   display: block;
   width: 100%;
+  /* height: 100%; */
   position: relative;
   color: #292929;
   font-weight: bold;
   /* font-size: 1.1rem; */
   font-size: clamp(11px, 1.5vw, 18px);
   /* background-color: red; */
-  line-height: 50px;
+  /* line-height: 50px; */
+  line-height: 30px;
+  /* background-color: #009223; */
+  z-index: 99999;
 }
 
 /* 서브메뉴 */
@@ -74,16 +79,19 @@
   position: relative;
   top: 0px;
   left: 0;
-  gap: 16px;
-  padding: 15% 0;
+  /* padding: 15% 0; */
+  padding: 3vw 0;
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
-  /* background-color: #009223; */
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+/* background-color: #009223; */
 }
-
 .submenu > li > a {
-  display: block;
+  /* display: block; */
+
   color: #666666;
   line-height: 30px;
   /* font-size: 0.9rem; */
@@ -98,7 +106,9 @@
 .submenu.active {
   /* display: block; */
   /* height: 200px; */
-  height: 250px;
+  /* height: 250px; */
+  top: -35%;
+  height: 300px;
   opacity: 1;
   visibility: visible;
 }
@@ -107,12 +117,30 @@
 }
 
 /* 반응형 폰트 사이즈 */
-/* @media screen and (max-width:1200px){
-  .menubar > li > a {
+@media screen and (max-width:1600px){
+  /* .menubar > li > a {
     font-size: 0.9rem;
-  }
+  } */
+   .submenu {
+    padding: 3.5vw 0;
+   }
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
+  /* .menubar > li > a {
+    font-size: 0.9rem;
+  } */
+   .submenu {
+    padding: 4.5vw 0;
+   }
+}@media screen and (max-width:1100px){
+  /* .menubar > li > a {
+    font-size: 0.9rem;
+  } */
+   .submenu {
+    padding: 5vw 0;
+   }
+}
+/* @media screen and (max-width:1100px){
   .menubar > li > a {
     font-size: 0.7rem;
   }

@@ -23,7 +23,7 @@
 }
 
 /* 서브웨이 메뉴 배경아이콘 */
-.menu_top h1::before {
+/* .menu_top h1::before {
   content: "";
   width: 60px;
   height: 60px;
@@ -31,6 +31,16 @@
   position: absolute;
   top: -10px;
   left: -30px;
+  z-index: -10;
+} */
+.menu_top h1::before {
+  content: "";
+  width: 5vw;
+  height: 5vw;
+ background: url("../image/imgi_31_bul_tit.png") no-repeat center/100% auto;
+  position: absolute;
+  top: -2vw;
+  left: -3vw;
   z-index: -10;
 }
 
@@ -196,4 +206,27 @@ left: 10% !important;
 }
 .sandtap-menus{
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_top{
+    flex-direction: column;
+  }
+  .menu_top h1{
+    margin: auto;
+  }
+  .sandtap-menus {
+    width: 100%;
+    padding-top: 4%;
+  }
+  .menu_top h1::before {
+  content: "";
+  width: 5vw;
+  height: 5vw;
+ background: url("../image/imgi_31_bul_tit.png") no-repeat center/100% auto;
+  position: absolute;
+  top: -1vw;
+  left: -3vw;
+  z-index: -10;
+}
 }
